@@ -16,7 +16,7 @@ function setup() {
   fft = new p5.FFT();       // Initialize FFT for waveform
   amp = new p5.Amplitude(); // Initialize amplitude detection
 
-  sound.loop();             // Start the song in a loop
+  sound.loop();             // Start the sond in a loop
 }
 
 function draw() {
