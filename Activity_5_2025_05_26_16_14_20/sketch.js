@@ -1,8 +1,8 @@
 function setup() {
   createCanvas(500, 500);
-  colorMode(HSB, 360, 100, 100);
+  colorMode(RGB, 100, 100, 100); // The color mode
   noStroke();
-  frameRate(10); // slow down the update for a flickering pattern
+  frameRate(10);  // Slows down for a flickering pattern
 }
 
 function draw() {
@@ -13,11 +13,11 @@ function draw() {
     for (let j = 0; j < height / gridSize; j++) {
       if (random() < 0.1) continue; // 10% chance to skip cell
 
-      let h = random(360);
-      let s = random(80, 100);
-      let b = random(60, 100);
+      let r = random(20, 255);
+      let g = random(20, 255);
+      let b = random(20, 255);
 
-      fill(h, s, b);
+      fill(r, g, b);
 
       let x = i * gridSize + random(-1, 1);
       let y = j * gridSize + random(-1, 1);
